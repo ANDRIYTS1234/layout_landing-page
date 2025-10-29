@@ -27,7 +27,6 @@
 
       transition:
         opacity $effect-duration ease,
-        margin-left $effect-duration ease,
         visibility 0s $effect-duration;
 
       white-space: nowrap;
@@ -46,18 +45,12 @@
 
       transition:
         opacity $effect-duration ease,
-        margin-left $effect-duration ease,
         visibility 0s;
     }
 
     @media (max-width: 576px) {
       .icon--phone .phone-number {
         display: none;
-      }
-
-      &:hover .phone-number {
-        opacity: 0;
-        visibility: hidden;
       }
     }
   }
