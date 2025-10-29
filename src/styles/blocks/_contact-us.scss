@@ -31,6 +31,10 @@
     border-radius: 8px;
 
     background-color: #f9f9f9;
+
+    &--text-area {
+      resize: none;
+    }
   }
 
   &__button {
@@ -55,6 +59,10 @@
     border-radius: 8px;
 
     @include hover(transform, scale(1.05));
+
+    &:focus {
+      background-color: #010810;
+    }
   }
 
   &__contacts {
@@ -79,6 +87,12 @@
   }
 
   &__contact-value {
+    text-decoration: none;
+    font-size: 16px;
+    color: #191919;
+  }
+
+  &__email {
     text-decoration: none;
     font-size: 16px;
     color: #191919;
